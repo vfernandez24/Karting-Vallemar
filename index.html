@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Diseño sin título (7).png" type="image/png">
+    <title>Karting de Vallemar</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style_pc.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <!--BTN SUBIR (FIXED)-->
+        <div class="link__arriba_div">
+            <a class="link link__arriba" href="#inicio">
+                <img class="link__img" src="img/flecha.svg">
+            </a>
+        </div>
+
+        <!--HEADER-->
+        <header class="header">
+
+            <!--LOGO-->
+            <div class="header__logo">
+                <img src="img/Circuito negro.png" class="header__foto">
+                <h1 class="header__titulo"><a class="header__titulo" href="">Circuit de Vallemar</a></h1>
+            </div>
+
+            <!--NAV-->
+            <nav class="header__nav" id="nav">
+                <ul class="header__list">
+                    <div class="header__opciones">
+                        <li class="header__item">
+                            <a href="#sobreNosotros" class="link header__link">Sobre Nosotros</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#reservas" class="link header__link">Reservas</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#clasificacion" class="link header__link">Clasificaciones</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="contacto.html" class="header__link--contacto">Contacto</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <!--BOTON (MOVIL)-->
+            <div class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <!--MAIN-->
+        <main>
+
+            <!--INICIO-->
+            <section id="inicio" class="section inicio">
+                <img src="img/titulo.svg" class="inicio__titulo">
+                <div class="inicio__sombra">
+                    <p class="inicio__detalles">**Calle de los Robles, 15</p>
+                    <p class="inicio__detalles">39180 Vallemar</p>
+                    <p class="inicio__detalles">Cantabria, España**</p>
+                </div>
+            </section>
+
+            <!--SOBRE NOSOTROS-->
+            <section id="sobreNosotros" class="section sobreNosotros">
+                <img src="img/coche.svg" class="sobreNosotros__fotoCoche">
+                <h2 class="section__titulo">SOBRE NOSOTROS</h2>
+                <div class="sobreNosotros__container">
+                    <div class="sobreNosotros__div sobreNosotros__div--1">
+                        ¡Bienvenidos al Circuito de Vallemar, Cantabria!
+                        Enclavado en el corazón de los impresionantes paisajes de Vallemar, nuestro circuito
+                        es el destino definitivo para los amantes de la velocidad y la adrenalina. Nuestro 
+                        circuito de karts, diseñado con precisión y pasión, ofrece una experiencia inigualable 
+                        tanto para principiantes como para pilotos experimentados.
+                    </div>
+                    <div class="sobreNosotros__div sobreNosotros__div--fotos">
+                        <img src="img/1.png" class="sobreNosotros__foto sobreNosotros__foto--1">
+                        <img src="img/2.png" class="sobreNosotros__foto sobreNosotros__foto--2">
+                    </div>
+                </div>
+            </section>
+
+            <!--DETALLES DEL CIRCUITO-->
+            <section class="section detalles">
+                <h2 class="section__titulo">DETALLES DEL CIRCUITO</h2>
+                <img src="img/checked_flag.svg" class="detalles__flag">
+                <div class="detalles__container">
+                    <ul class="detalles__list">
+                        <li class="detalles__item">Longitud: 1,2 km</li>
+                        <li class="detalles__item">Anchura de la pista: 8 metros</li>
+                        <li class="detalles__item">Número de curvas: 12 (7 a la derecha, 5 a la izquierda)</li>
+                        <li class="detalles__item">Rectas principales: 3 (Recta de salida, Recta del Relámpago, Recta de Meta)</li>
+                        <li class="detalles__item">Dificultad: Media-Alta</li>
+                        <li class="detalles__item">Punto más alto: 15 metros sobre el nivel del inicio</li>
+                        <li class="detalles__item">Punto más bajo: 3 metros sobre el nivel del inicio</li>
+                    </ul>
+                    <div class="detalles__ftoContainer">
+                        <img src="img/Circuito negro.png" class="detalles__circuit"> 
+                    </div>   
+                </div>
+                <div class="detalles__enlace">
+                    <a class="detalles__btnSaberMas">
+                        Saber más
+                    </a>
+                </div>
+            </section>
+
+            <!--RESERVAS-->
+            <section id="reservas" class="section reservas">
+                <h2 class="section__titulo">RESERVA DE TANDAS</h2>
+                <p class="reservas__parrafo">
+                    ¡A qué esperas para hacer una tanda de karts! Recuerda que puedes crear una 
+                    tanda para ti y tus amigos, o unirte a un tanda ajena y conocer gente
+                </p>
+                <p class="reservas__parrafo">
+                    Recuerda que para correr una tanda debeis de ser mínimo 8 personas
+                </p>
+                <div class="reservas__container">
+                    <a href="" class="reservas__btn" style="margin-right: 50px">Crear tanda nueva</a>
+                    <a href="" class="reservas__btn">Unirse a una existente</a>
+                </div>
+            </section>
+
+            <!--CLASIFICACION-->
+            <section id="clasificacion" class="section clasificacion">
+                <h2 class="section__titulo">CLASIFICACIONES</h2>
+                <p class="clasificacion__parrafo">
+                    Consulta la tabla con los mejores tiempos del día o los resultados de carreras anteriores
+                </p>
+                <div class="clasificacion__container">
+                    <div class="clasificacion__div">
+                        <h3 class="clasificacion__titulo">Mejores tiempos de hoy</h3>
+                        <table class="clasificacion__list">
+                            <th class="clasificacion__fila">
+                                <td class="clasificacion__tiempo"></td>
+                                <td class="clasificacion__tiempo"></td>
+                            </th>
+                            <th class="clasificacion__fila">
+                                <td class="clasificacion__tiempo"></td>
+                                <td class="clasificacion__tiempo"></td>
+                            </th>
+                            <th class="clasificacion__fila">
+                                <td class="clasificacion__tiempo"></td>
+                                <td class="clasificacion__tiempo"></td>
+                            </th>
+                            <th class="clasificacion__fila">
+                                <td class="clasificacion__tiempo"></td>
+                                <td class="clasificacion__tiempo"></td>
+                            </th>
+                        </table>
+                    </div>
+                    <div class="clasificacion__div">
+                        <h3 class="clasificacion__titulo">Clasificacion histórica</h3>
+                        <table class="clasificacion__list">
+
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+
+        </footer>
+
+        <!--SCRIPTS-->
+        <script src="js/scroll.js"></script>
+        <script src="js/animationMenuScroll.js"></script>
+    </div>
+
+</body>
+</html>

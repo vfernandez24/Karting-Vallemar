@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inria Sans",sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: calc(100% - 8px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+    width: 8px;
+    padding: 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #546E7A;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #37474F;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d8d8d8;
+    padding: 5px 0;
+}
+
+@media (min-width:901px) {
+
+    
+    /* FLECHA ARRIBA */
+
+    .link__arriba {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #fff;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 60;
+        border: 2px solid #546E7A;
+    }
+
+    .link__arriba:hover {
+        background: #ececec
+    }
+
+    .link__img {
+        position: relative;
+        height: 50px;
+        z-index: 61;
+    }
+    
+    /* HEADER */
+
+    .header {
+        width: 100%;
+        height: 12vh;
+        position: fixed;
+        z-index: 10;
+        background-color: #E0E6ED;
+        display: flex;
+        transition: all ease 1s;
+        border-bottom: 2.5px solid #222;
+    }
+
+    /* Logo */
+    .header__logo {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header__foto {
+        width: 115px;
+        margin: 0 10%;
+    }
+
+    .header__titulo {
+        text-decoration: none;
+        color: #000;
+        font-size: 6.5vh;
+        font-weight: bold;
+    }
+
+    /* Nav */
+    .header__nav {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .header__list {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header__opciones {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .header__item {
+        list-style: none;
+        margin: 0 2vw;
+    }
+
+    .header__link {
+        text-decoration: none;
+        color: #000;
+        font-size: 2.5vh;
+        font-weight: bold;
+        transition: all ease .5s;
+    }
+
+    .header__link:hover {
+        color: #546E7A;
+    }
+
+    .header__link--contacto {
+        text-decoration: none;
+        font-size: 2.5vh;
+        font-weight: bold;
+        transition: all ease .5s;
+        color: #546E7A;
+        background: #fff;
+        border-radius: 20px;
+        padding: 7px 12px;
+        margin-right: 2vw;
+        border: 2.5px solid #fff;
+    }
+
+    .header__link--contacto:hover {
+        color: #fff;
+        background: #546E7A;
+    }
+
+
+    /* INICIO */
+
+    .inicio {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../img/Portada_PC.png");
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat; 
+    }
+
+    .inicio__sombra {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: linear-gradient(to top, #000, transparent);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inicio__detalles {
+        color: #fff;
+        font-size: 3vh;
+        font-weight: 300;
+    }
+
+
+    /* SOBRE NOSOTROS */
+
+    .sobreNosotros {
+        height: 100vh;
+        width: 100vw;
+        background: #E0E6ED;
+        padding: 2% 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sobreNosotros__fotoCoche {
+        height: 70px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .section__titulo {
+        letter-spacing: 11px;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .sobreNosotros__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobreNosotros__div {
+        width: 50%;
+        height: 500px;
+    }
+
+    .sobreNosotros__div--1 {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        font-weight: lighter;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sobreNosotros__div--fotos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sobreNosotros__foto {
+        height: 200px;
+        position: relative;
+        border-radius: 30px;
+        box-shadow: 0px 0px 30px #000;
+    }
+
+    .sobreNosotros__foto--1 {
+        top: 30px;
+        right: 50px;
+    }
+
+    .sobreNosotros__foto--2 {
+        bottom: 30px;
+        left: 50px;
+    }
+
+
+    /* DETALLES DEL CIRCUITO */
+
+    .detalles {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, #E0E6ED, #fff, #fff, #fff, #fff)
+    }
+
+    .detalles__flag {
+        height: 200px;
+        opacity: 0.3;
+        position: absolute;
+        z-index: 0;
+        left: 5%;
+    }
+
+    .detalles__container {
+        width: 100vw;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .detalles__list {
+        padding-left: 5%;
+        width: 60%;
+    }
+
+    .detalles__item {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .detalles__ftoContainer {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detalles__circuit {
+        height: 239px;
+    }
+
+    .detalles__enlace {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .detalles__btnSaberMas {
+        padding: 12px 70px;
+        background: #546E7A;
+        border: 2px solid #546E7A;
+        color: #fff;
+        border-radius: 60px;
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        transition: all ease .5s;
+    }
+
+    .detalles__btnSaberMas:hover {
+        background-color: #fff;
+        color: #546E7A;
+    }
+
+
+    /* RESERVAS */
+
+    .reservas {
+        width: 100vw;
+        height: 100vh;
+        background: #F5F5F5;
+        border-top: 1px solid #000;
+        padding: 2.5% 2.5% 2.5% 2.5%;
+    }
+
+    .reservas__parrafo {
+        margin-top: 40px;
+        font-size: 35px;
+        font-weight: 50;
+        text-align: center;
+    }
+
+    .reservas__container {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reservas__btn {
+        padding: 10px 20px;
+        width: 300px;
+        text-align: center;
+        height: fit-content;
+        background: #546E7A;
+        color: #fff;
+        border-radius: 600px;
+        border: 2px solid #546E7A;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 200;
+        cursor: pointer;
+        transition: all ease .5s;
+    }
+
+    .reservas__btn:hover {
+        background-color: #fff;
+        color: #546E7A;
+    }
+}
+

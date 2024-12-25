@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desplazamiento Suave</title>
+  <style>
+    /* 2. CSS para el Desplazamiento Suave */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Estilos de ejemplo para mejorar la presentación */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    section {
+      height: 100vh; /* Para simular diferentes secciones de la página */
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1. Enlaces dentro de li -->
+  <nav>
+    <ul>
+      <li><a href="#seccion1">Sección 1</a></li>
+      <li><a href="#seccion2">Sección 2</a></li>
+      <li><a href="#seccion3">Sección 3</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido de cada sección -->
+  <section id="seccion1">
+    <h2>Sección 1</h2>
+    <p>Contenido de la sección 1.</p>
+  </section>
+  <section id="seccion2">
+    <h2>Sección 2</h2>
+    <p>Contenido de la sección 2.</p>
+  </section>
+  <section id="seccion3">
+    <h2>Sección 3</h2>
+    <p>Contenido de la sección 3.</p>
+  </section>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    targetElement.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+  </script>
+</body>
+</html>
